@@ -1,9 +1,11 @@
-# OMNeT++ on wasm
+# OMNeT++ Web IDE
 
 ## prerequisotes
-* docker
+* nodejs
 
 ## getting started
 ```sh
-$ ./build_all.sh
+$ cd client
+$ npm ci
+$ npm start
 ```
