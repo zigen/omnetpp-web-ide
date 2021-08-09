@@ -8,7 +8,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build && npm run build:client",
-    "build:client": "parcel build client/index.html -d ./dist/client",
+    "build:client": "parcel build client/index.html -d ./dist/client --no-minify",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
