@@ -6,15 +6,16 @@ import css from "rollup-plugin-import-css";
 
 export default {
   input: {
-   "main": 'src/main.js',
+   "main": 'client/main.js',
+   "ace-builds/src-noconflict/ace": "node_modules/ace-builds/src-noconflict/ace.js"
   },
   output: {
-    dir: "public/build",
+    dir: "dist/client",
     format: 'esm',
   },
   plugins: [
     svelte({
-      include: 'src/**/*.svelte',
+      include: 'client/**/*.svelte',
       // Optionally, preprocess components with svelte.preprocess:
       // https://svelte.dev/docs#svelte_preprocess
       emitCss: false,

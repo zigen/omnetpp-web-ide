@@ -1,8 +1,4 @@
-import {
-  IStrategyOptions,
-  IStrategyOptionsWithRequest,
-  Strategy,
-} from 'passport-local';
+import { IStrategyOptions, Strategy } from 'passport-local';
 import { PassportStrategy } from '@nestjs/passport';
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { AuthService } from './auth.service';

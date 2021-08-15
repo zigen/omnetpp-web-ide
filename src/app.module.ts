@@ -8,9 +8,16 @@ import { UsersModule } from './users/users.module';
 import { PrismaService } from './prisma.service';
 @Module({
   imports: [
-    ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', 'client'),
-    }),
+    ServeStaticModule.forRoot(
+      {
+        rootPath: join(__dirname, '..', 'dist/client'),
+        serveRoot: '/',
+      },
+      {
+        rootPath: join(__dirname, '..', 'public'),
+        serveRoot: '/public',
+      },
+    ),
     AuthModule,
     UsersModule,
   ],

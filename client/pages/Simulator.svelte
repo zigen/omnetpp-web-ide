@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import { fileSystem } from "./store/simulator";
+  import { fileSystem } from "../store/simulator";
   export let visible;
   let canvas;
   let qtLoader;
@@ -29,10 +29,9 @@
         statusText = "";
       },
     });
-    qtLoader.loadEmscriptenModule("quisp");
+    // qtLoader.loadEmscriptenModule("quisp");
     let timer;
     timer = setInterval(() => {
-      console.log(qtLoader.status);
       if (qtLoader.status === "Running") {
         clearInterval(timer);
         fileSystem.set(FS);

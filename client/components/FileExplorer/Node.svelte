@@ -2,7 +2,7 @@
   export let fs;
   export let path;
   export let depth;
-  import {selectedFilePath, selectedFileContent} from "../store/file";
+  import {selectedFilePath, selectedFileContent} from "../../store/file";
   let openDir = false;
   let dirs = [];
   const mode = fs.lstat(path).mode;

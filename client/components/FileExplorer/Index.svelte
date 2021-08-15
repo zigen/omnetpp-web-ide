@@ -1,5 +1,5 @@
 <script>
-  import { fileSystem } from "../store/simulator";
+  import { fileSystem } from "../../store/simulator";
   import Node from "./Node.svelte";
   let dirs = [];
   let fs = null;

@@ -1,7 +1,8 @@
 <script>
   // import FileExplorer from "./FileExplorer/Index.svelte";
-  import Simulator from "./Simulator.svelte";
-  import Editor from "./Editor.svelte";
+  import Simulator from "./pages/Simulator.svelte";
+  import Editor from "./pages/Editor.svelte";
+  import Me from "./components/Me.svelte";
 
   const TABS = {
     SIM: "SIM",
@@ -22,6 +23,9 @@
   </li>
   <li class="nav-items">
     <a class="nav-link" on:click={() => (tab = TABS.EDITOR)} href="#">Editor</a>
+  </li>
+  <li>
+    <Me />
   </li>
 </nav>
 

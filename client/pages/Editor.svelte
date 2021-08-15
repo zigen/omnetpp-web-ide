@@ -1,11 +1,11 @@
 <script>
   import { onMount } from "svelte";
-  import FileExplorer from "./FileExplorer/Index.svelte";
+  import FileExplorer from "../components/FileExplorer/Index.svelte";
   import "ace-builds/src-noconflict/ace";
   import "ace-builds/src-noconflict/mode-javascript";
   import "ace-builds/src-noconflict/mode-ini";
   import "ace-builds/src-noconflict/mode-c_cpp";
-  import {selectedFileContent, selectedFilePath} from "./store/file";
+  import {selectedFileContent, selectedFilePath} from "../store/file";
   let container;
   let editor = null;
   onMount(() => {
